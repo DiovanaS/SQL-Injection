@@ -84,7 +84,7 @@ public class SafeFromSQLInjection {
             // Execução da consulta SQL
             ResultSet rs = pstmt.executeQuery();
 
-            // Iteração sobre o resultado da consulta
+            // Exibicação do resultado da pesquisa
             while (rs.next()) {
                 String nomeProduto = rs.getString("nome");
                 System.out.println("Produto encontrado: " + nomeProduto);
